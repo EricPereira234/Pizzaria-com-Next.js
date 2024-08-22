@@ -1,5 +1,4 @@
-
-.containerCenter{
+.containerCenter {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,7 +7,7 @@
   background-color: var(--dark-900);
 }
 
-.login{
+.login {
   margin-top: 24px;
   display: flex;
   flex-direction: column;
@@ -16,6 +15,10 @@
   justify-content: center;
   gap: 16px;
   width: 600px;
+
+  h2 {
+    color: var(--white);
+  }
 
   form {
     color: var(--white);
@@ -26,17 +29,42 @@
     width: 90%;
     gap: 16px;
   }
-  
-  form button{
+
+  form button {
     height: 40px;
     font-size: 16px;
+    border: 0;
+    border-radius: 8px;
+    color: var(--white);
+    background-color: var(--red-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+  }
+
+  form button:hover {
+    transform: scale(1.05);
   }
 }
 
+.input {
+  height: 40px;
+  border: 1px solid var(--gray--100);
+  padding: 0 16px;
+  border-radius: 8px;
+  background-color: var(--dark--900);
+  color: var(--white);
+  font-size: 16px;
+}
 
-@media (max-width: 620px){
-  .login{
+.text {
+  color: var(--white);
+}
+
+
+@media (max-width: 620px) {
+  .login {
     width: 90%;
   }
 }
-
